@@ -1,0 +1,20 @@
+ /* Gaya untuk cetak */
+        @media print {
+            /* Sembunyikan semua elemen selain struk saat mencetak */
+            body > #main-app > :not(main) {
+                display: none !important;
+            }
+            body > .fixed {
+                display: none !important;
+            }
+            /* Pastikan struk berada di tengah halaman cetak */
+            #receipt-container {
+                display: block !important;
+                margin: 0;
+                padding: 0;
+                box-shadow: none !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
